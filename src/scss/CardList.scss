@@ -1,0 +1,16 @@
+@import "variables";
+
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+
+  @include breakpoint(small){
+    padding: 0 10px;
+  }
+
+  @include breakpoint(large){
+    padding: 0 15%;
+  }
+}

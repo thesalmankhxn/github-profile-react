@@ -1,0 +1,31 @@
+.form {
+    padding: 2rem;
+    text-align: center;
+    width: 100vw;
+}
+
+.input {
+    padding: 0 25px;
+    font: 1rem 'Raleway';
+    outline: none;
+    width: 350px;
+    height: 50px;
+    margin: 20px 0px 20px 0px;
+}
+
+.button {
+    font: bold 1rem 'Raleway';
+    border: 3px solid #AA00FF;
+    background: transparent;
+    color: #AA00FF;
+    outline: none;
+    width: 100px;
+    height: 50px;
+
+
+    &:hover {
+        background: #AA00FF;
+        color: #eee;
+    }
+}
+

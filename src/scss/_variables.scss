@@ -1,0 +1,27 @@
+// Fonts
+$font: 'Raleway', sans-sarif;
+
+// Colors
+$black: #212121;
+$bgColor: rgb(238,238,238);;
+$accent: #AA00FF;
+
+//Borders
+$border-radius-circle: 30px;
+
+// Breakpoints
+$breakpoints: (
+    small: 499px,
+    medium: 699px,
+    large: 999px,
+    xlarge: 1399px
+
+);
+
+@mixin breakpoint($size){
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $breakpoint-value){
+        @content;
+    }
+}
