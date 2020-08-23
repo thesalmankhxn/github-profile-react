@@ -2,11 +2,10 @@ import React from "react";
 import "./scss/CardList.scss";
 
 import Card from "./Card";
-import testData from "./textData";
 
 const CardList = (props) => (
     <div className="container">
-        {testData.map(profile => <Card {...profile}/>)}
+        {props.profiles.map(profile => <Card key={profile.id} {...profile}/>)}
     </div>
 );
 

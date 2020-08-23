@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./scss/Card.scss";
-import testData from "./textData";
 
 class Card extends React.Component {
     render() {
